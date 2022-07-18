@@ -1,16 +1,14 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Vika
-  Date: 17.07.2022
-  Time: 19:46
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+    <link href="static/main.css" rel="stylesheet">
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <script src="<c:url value="/static/jquery-3.6.0.min.js"/>"></script>
+</head>
+<body>
+<h3>Твою ложь разоблачили ${name}!</h3>
+<h1>ПОРАЖЕНИЕ!</h1>
+<input type="button" name="submit"onclick="window.location='/index.jsp'" value="Начать с начала!"/>
+</body>
 </html>
