@@ -22,7 +22,7 @@ public class MyServlet extends HttpServlet {
         session.setAttribute("name", name);
         session.getAttribute("name");
         response.setContentType("text/html");
-        if (name == "") {
+        if (name.isEmpty()) {
             response.sendRedirect("index.jsp");
         } else {
             request.setAttribute("visitCounter", visitCounter);
