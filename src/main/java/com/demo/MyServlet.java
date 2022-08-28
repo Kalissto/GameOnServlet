@@ -27,7 +27,8 @@ public class MyServlet extends HttpServlet {
         } else {
             request.setAttribute("visitCounter", visitCounter);
             request.setAttribute("name", name);
-            request.getRequestDispatcher("one.jsp").forward(request, response);
+            // request.getRequestDispatcher("one.jsp").forward(request, response);
+            response.sendRedirect("one.jsp");
         }
 
 
@@ -35,7 +36,6 @@ public class MyServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
 
     }
 }

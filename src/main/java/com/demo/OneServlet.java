@@ -23,6 +23,7 @@ public class OneServlet extends HttpServlet {
         writer.println("<p>Gender: " + oneRadio + "</p>");
         if (oneRadio.contains("1")) {
             response.sendRedirect("two.jsp");
+
         }
         if (oneRadio.contains("2")) {
             response.sendRedirect("defeat1.jsp");
